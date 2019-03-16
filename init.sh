@@ -1,2 +1,2 @@
-eval "$(lua ./z.lua  --init bash once enhanced)"
+eval "$(lua ~/.local/shell_config/z.lua  --init bash once enhanced)"
 
