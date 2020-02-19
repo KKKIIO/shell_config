@@ -5,4 +5,4 @@ $PSDefaultParameterValues['Out-File:Encoding'] = 'utf8'
 
 $env:LC_ALL = "C.UTF-8"
 
-Invoke-Expression ($(lua $(Resolve-Path ~/.shell/z.lua) --init powershell) -join "`n") 
+Invoke-Expression ($(lua $(Resolve-Path ~/.local/shell_config/z.lua) --init powershell) -join "`n") 
