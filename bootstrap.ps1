@@ -6,5 +6,4 @@ Invoke-WebRequest https://raw.githubusercontent.com/skywind3000/z.lua/master/z.l
 $source_init += '$fileContents = [string]::join([environment]::newline, (get-content -path ~/.local/shell_config/init.ps1))'
 $source_init += "`n"
 $source_init += 'invoke-expression $fileContents'
-echo $source_init >> $profile.CurrentUserAllHosts
-
+$source_init | Out-File -FilePath $profile.CurrentUserAllHosts
