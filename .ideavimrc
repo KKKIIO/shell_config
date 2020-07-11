@@ -1,0 +1,21 @@
+set clipboard=unnamed
+
+set hlsearch
+set ignorecase
+set incsearch
+
+set ideajoin
+set surround
+
+set easymotion
+map <Leader> <Plug>(easymotion-prefix)
+nmap s <Plug>(easymotion-s2)
+
+nnoremap <Leader>si :action SelectIn<CR>
+
+nnoremap <C-o> :action Back<CR>
+nnoremap <C-i> :action Forward<CR>
+
+noremap <Leader>e :action IntroduceActionsGroup<CR>
+
+nnoremap <Leader>rs :action Resume<CR>
