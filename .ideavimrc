@@ -1,15 +1,26 @@
-set clipboard=unnamed
-
-set hlsearch
-set ignorecase
-set incsearch
+source ~/.local/shell_config/common.vim
 
 set ideajoin
 set surround
 
+set multiple-cursors
+" let g:multi_cursor_use_default_mapping=0
+
+" let g:multi_cursor_start_word_key      = '<C-n>'
+" let g:multi_cursor_select_all_word_key = '<A-n>'
+" let g:multi_cursor_start_key           = 'g<C-n>'
+" let g:multi_cursor_select_all_key      = 'g<A-n>'
+" let g:multi_cursor_next_key            = '<C-n>'
+" let g:multi_cursor_prev_key            = '<C-p>'
+" let g:multi_cursor_skip_key            = '<C-x>'
+" let g:multi_cursor_quit_key            = '<Esc>'
+
+
 set easymotion
 map <Leader> <Plug>(easymotion-prefix)
 nmap s <Plug>(easymotion-s2)
+
+set highlightedyank
 
 nnoremap <Leader>si :action SelectIn<CR>
 
@@ -19,3 +30,15 @@ nnoremap <C-i> :action Forward<CR>
 noremap <Leader>e :action IntroduceActionsGroup<CR>
 
 nnoremap <Leader>rs :action Resume<CR>
+
+noremap <Leader>cg :action StringManipulation.Group.SwitchCase<CR>
+noremap <Leader>cc :action StringManipulation.ToCamelCase<CR>
+noremap <leader>cp :action StringManipulation.ToPascalCaseOrCamelCase<cr>
+
+" StringManipulation.ToDotStyleAction
+" StringManipulation.ToHyphenCaseAction
+" StringManipulation.ToHyphenCaseOrCamelCase
+" StringManipulation.ToSentenceCaseOrCamelCase
+" StringManipulation.ToSnakeCaseOrCamelCase
+
+" my macro
