@@ -41,4 +41,6 @@ noremap <leader>cp :action StringManipulation.ToPascalCaseOrCamelCase<cr>
 " StringManipulation.ToSentenceCaseOrCamelCase
 " StringManipulation.ToSnakeCaseOrCamelCase
 
-" my macro
+set clipboard+=ideaput
+
+" macroo

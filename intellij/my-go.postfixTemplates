@@ -1,0 +1,13 @@
+.fmt : format string
+	STRING  →  fmt.Sprintf($expr$, $end$)
+
+.int32 : as int32
+	INT  →  int32($expr$)
+
+.cast : type cast
+	ANY  →  ($end$)($expr$)
+
+.pb : to proto value
+	STRING  →  proto.String($expr$)
+	INT64  →  proto.Int64($expr$)
+	INT  →  proto.Int32($expr$)
